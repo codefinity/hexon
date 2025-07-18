@@ -1,17 +1,13 @@
-﻿using System;
+﻿using Codefinity.Hexon.Architecture.Hexagon;
+using System;
 
 namespace Codefinity.Hexon.Architecture
 {
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-    public class RepositoryAttribute : Attribute
+    public class RepositoryAttribute : AdapterAttribute
     {
-        public Side Side { get; }
-        public string PortName { get; }
-
-        public RepositoryAttribute(string portName)
+        public RepositoryAttribute(string portName) : base(Side.Driven, portName)
         {
-            Side = Side.Driven;
-            PortName = portName;
+
         }
 
     }

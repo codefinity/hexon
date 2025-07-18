@@ -10,8 +10,4 @@
     <ProjectReference Include="..\..\hexon\Codefinity.Hexon.Architecture\Codefinity.Hexon.Architecture.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UseCases\UseCaseOne\" />
-  </ItemGroup>
-
 </Project>

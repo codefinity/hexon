@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Codefinity.Hexon.Architecture.Hexagon;
+using System;
 
 namespace Codefinity.Hexon.Architecture
 {
